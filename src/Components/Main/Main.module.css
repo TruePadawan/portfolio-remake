@@ -1,0 +1,27 @@
+.container {
+    width: 40em;
+    height: max-content;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.tech-stack img {
+    /* border: none; */
+    border-radius: 10px;
+    background-color: beige;
+    padding: 10px;
+    width: 3.5rem;
+}
+
+.contact-and-project {
+    height: 100%;
+    display: flex;
+}

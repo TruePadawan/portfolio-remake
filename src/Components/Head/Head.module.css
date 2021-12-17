@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+
+.head {
+    padding: 0.5em;
+    width: max-content;
+    display:flex;
+}
+
+.title {
+    font-family: "Barlow Condensed", sans-serif;
+    padding: 0.5em;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 1px 8px rgba(114, 111, 111, 0.25);
+}
+.title span {
+    display: block;
+    text-align: center;
+}
+
+.title-name {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: rgb(201, 125, 125);
+    padding: 5px;
+}
+
+.title-role {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.threads {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.threads span {
+    background: rgb(189, 177, 173);
+    border-radius: 12px;
+    width: 2.5px;
+    height: 20px;
+}
