@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portfolio-remake/static/css/main.95ced680.css",
+    "main.js": "/portfolio-remake/static/js/main.65646a4c.js",
+    "index.html": "/portfolio-remake/index.html",
+    "main.95ced680.css.map": "/portfolio-remake/static/css/main.95ced680.css.map",
+    "main.65646a4c.js.map": "/portfolio-remake/static/js/main.65646a4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95ced680.css",
+    "static/js/main.65646a4c.js"
+  ]
+}
