@@ -7,7 +7,7 @@ export default function Projects()
     return (
         <Card className={styles["projects-card"]}>
 
-            <span>Projects</span>
+            <span>Sample Projects</span>
             <div className={styles["projects"]}>
                     <a href="https://github.com/TruePadawan/GitHub-Info-Checker" target="_blank" rel="noreferrer">
                         <Card className={styles["projects-link-card"]}>
