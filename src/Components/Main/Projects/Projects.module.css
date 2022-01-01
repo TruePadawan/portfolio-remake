@@ -9,13 +9,26 @@
 
 .projects-card span
 {
-    color: brown;
+    color: rgb(247, 233, 159);
     font-weight: bold;
     font-size: 1.2em;
     align-self: flex-end;
 }
 
-.projects-link {
+.projects {
+    flex-grow: 1;
+    display: flex;
+    justify-content:stretch;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.projects a {
+    flex-grow: 1;
+    display: flex;
+}
+
+.projects-link-card {
     background-color:white;
     width: 5.4rem;
     height: 113px;
@@ -26,15 +39,15 @@
     flex-grow: 1;
 }
 
-.projects-link img {
-    width: 48px;
+.projects-link-card img {
+    width: 36px;
     height: auto;
 }
 
-.projects {
-    flex-grow: 1;
-    display: flex;
-    justify-content:stretch;
-    flex-wrap: wrap;
-    gap: 1em;
+.projects-link-card:hover {
+    background-color: grey;
+}
+
+.projects-link-card:active {
+    background-color: rgb(82, 79, 79);
 }

@@ -9,29 +9,29 @@ export default function Projects()
 
             <span>Projects</span>
             <div className={styles["projects"]}>
-                <Card className={styles["projects-link"]}>
                     <a href="https://github.com/TruePadawan/GitHub-Info-Checker" target="_blank" rel="noreferrer">
-                        <img src={require("./resources/github.png")} alt="GitHub Info Checker" />
+                        <Card className={styles["projects-link-card"]}>
+                            <img src={require("./resources/github.png")} alt="GitHub Info Checker" />
+                        </Card>
                     </a>
-                </Card>
 
-                <Card className={styles["projects-link"]}>
                     <a href="https://github.com/TruePadawan/The-News-Project" target="_blank" rel="noreferrer">
-                        <img src={require("./resources/news.png")} alt="The News Project" />
+                        <Card className={styles["projects-link-card"]}>
+                            <img src={require("./resources/news.png")} alt="The News Project" />
+                        </Card>
                     </a>
-                </Card>
 
-                <Card className={styles["projects-link"]}>
                     <a href="https://github.com/TruePadawan/Nipsie" target="_blank" rel="noreferrer">
-                        <img src={require("./resources/nipsie.png")} alt="Nipsie" />
+                        <Card className={styles["projects-link-card"]}>
+                            <img src={require("./resources/nipsie.png")} alt="Nipsie" />
+                        </Card>
                     </a>
-                </Card>
 
-                <Card className={styles["projects-link"]}>
                     <a href="https://github.com/TruePadawan/Notepad--" target="_blank" rel="noreferrer">
-                        <img src={require("./resources/notepad.png")} alt="Notepad--" />
+                        <Card className={styles["projects-link-card"]}>
+                            <img src={require("./resources/notepad.png")} alt="Notepad--" />
+                        </Card>
                     </a>
-                </Card>
             </div>
         </Card>
     );

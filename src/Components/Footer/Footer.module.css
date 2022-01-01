@@ -10,3 +10,8 @@
     text-align: center;
     width: 50%;
 }
+
+.link-title {
+    width: 100%;
+    flex-grow: 1;
+}

@@ -9,21 +9,10 @@
 
 .contacts-card span
 {
-    color: brown;
+    color: rgb(247, 233, 159);
     font-weight: bold;
     font-size: 1.2em;
     align-self: flex-end;
-}
-
-.contacts-link {
-    background-color:white;
-    width: 5.4rem;
-    height: 113px;
-    min-width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
 
 .contacts {
@@ -32,4 +21,32 @@
     justify-content:stretch;
     flex-wrap: wrap;
     gap: 1em;
+}
+
+.contacts a {
+    flex-grow: 1;
+    display: flex;
+}
+
+.contacts-link-card {
+    background-color:white;
+    width: 5.4rem;
+    min-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.contacts-link-card img {
+    width: 36px;
+    height: auto;
+}
+
+.contacts-link-card:hover {
+    background-color: grey;
+}
+
+.contacts-link-card:active {
+    background-color: rgb(82, 79, 79);
 }

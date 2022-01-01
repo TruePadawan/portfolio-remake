@@ -14,11 +14,11 @@
 }
 
 .tech-stack img {
-    /* border: none; */
     border-radius: 10px;
     background-color: beige;
     padding: 10px;
     width: 3.5rem;
+    height: 56px;
 }
 
 .contact-and-project {
