@@ -16,20 +16,35 @@ const AboutMe = {
 const IconLinks = {
     title: "Icon Links by Icons8",
     links: (
-        <div className="footer-links">
-        <Card className={styles["link"]}>
-            <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
+        <Card className={styles["footer-links"]}>
+            <Card className={styles["footer-link"]}>
+                <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
+            </Card>
+
+            <Card className={styles["footer-link"]}>
+                <a href="https://icons8.com/icon/13963/twitter">Twitter icon</a>
+            </Card>
+
+            <Card className={styles["footer-link"]}>
+                <a href="https://icons8.com/icon/Sf2NuZRCVuaE/dev">Dev icon</a>
+            </Card>
+
+            <Card className={styles["footer-link"]}>
+                <a href="https://icons8.com/icon/13930/linkedin">LinkedIn icon</a>
+            </Card>
+
+            <Card className={styles["footer-link"]}>
+                <a href="https://icons8.com/icon/6VwxladcAlxL/notepad">Notepad icon</a>
+            </Card>
+
+            <Card className={styles["footer-link"]}>
+                <a href="https://icons8.com/icon/42835/news">News icon</a>
+            </Card>
+            
+            <Card className={`${styles["footer-link"]} ${styles["last-footer-link"]}`}>
+                <a href="https://icons8.com/icon/65023/mushroom">Mushroom icon</a>
+            </Card>
         </Card>
-        <Card className={styles["link"]}>
-            <a href="https://icons8.com/icon/13963/twitter">Twitter icon</a>
-        </Card>
-        <Card className={styles["link"]}>
-            <a href="https://icons8.com/icon/Sf2NuZRCVuaE/dev">Dev icon</a>
-        </Card>
-        <Card className={styles["link"]}>
-            <a href="https://icons8.com/icon/13930/linkedin">LinkedIn icon</a>
-        </Card>
-        </div>
     )
 };
 
