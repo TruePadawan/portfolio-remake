@@ -1,17 +1,11 @@
+.footer-button {
+    border: none;
+    background: transparent;
+    width: 150px;
+}
+
 .footer {
-    width: 30em;
-    height: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.3em;
-}
-
-.link {
-    text-align: center;
-    width: 50%;
-}
-
-.link-title {
     width: 100%;
-    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
 }

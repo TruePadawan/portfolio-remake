@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import Head from './Head/Head';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
+import Card from './Card/Card';
 import Modal from './Modal/Modal';
 
 import styles from './ui.module.css';
@@ -12,21 +13,59 @@ const AboutMe = {
     to build simple websites. I'm working towards mobile development with React-Native but at the moment working on my web-dev skills.</p>
 }
 
-const UI = () => {
-    const [clicked, setClicked] = useState(false);
+const IconLinks = {
+    title: "Icon Links by Icons8",
+    links: (
+        <div className="footer-links">
+        <Card className={styles["link"]}>
+            <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
+        </Card>
+        <Card className={styles["link"]}>
+            <a href="https://icons8.com/icon/13963/twitter">Twitter icon</a>
+        </Card>
+        <Card className={styles["link"]}>
+            <a href="https://icons8.com/icon/Sf2NuZRCVuaE/dev">Dev icon</a>
+        </Card>
+        <Card className={styles["link"]}>
+            <a href="https://icons8.com/icon/13930/linkedin">LinkedIn icon</a>
+        </Card>
+        </div>
+    )
+};
 
-    const clickHandler = () => {
-        setClicked((current) => {
-            return !current;
-        });
+const modalStateReducer = (currentState, action) => {
+    if (action.type === "UPDATE_HEAD_CLICK_STATE")
+    {
+        return { headClicked: !currentState.headClicked, footerClicked: currentState.footerClicked };
     }
+    else if (action.type === "UPDATE_FOOTER_CLICK_STATE")
+    {
+        return { headClicked: currentState.headClicked, footerClicked: !currentState.footerClicked };
+    }
+};
+
+const UI = () => {
+    const [modalState, modalStateDispatcher] = useReducer(modalStateReducer, {
+        headClicked: false,
+        footerClicked: false
+    });
+
+    const headClickHandler = () => {
+        modalStateDispatcher({ type: "UPDATE_HEAD_CLICK_STATE" });
+    }
+
+    const footerClickHandler = () => {
+        modalStateDispatcher({ type: "UPDATE_FOOTER_CLICK_STATE" });
+    }
+
     return (
         <>
-            { clicked && <Modal title={AboutMe.title} message={AboutMe.message} exitModal={clickHandler}/> }
+            { modalState.headClicked && <Modal title={AboutMe.title} message={AboutMe.message} exitModal={headClickHandler}/> }
+            { modalState.footerClicked && <Modal title={IconLinks.title} message={IconLinks.links} exitModal={footerClickHandler}/> }
             <div className={styles["ui"]}>
-                <Head clicked={clicked} clickHandler={clickHandler}/>
+                <Head clickHandler={headClickHandler}/>
                 <Main />
-                <Footer />
+                <Footer clickHandler={footerClickHandler}/>
             </div>
         </>
     );

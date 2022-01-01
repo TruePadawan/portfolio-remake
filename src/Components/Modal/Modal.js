@@ -18,7 +18,7 @@ const ModalContent = (props) => {
                 </div>
 
                 <div className={styles["modal-message"]}>
-                    <p>{props.message}</p>
+                    {props.message}
                 </div>
 
         </div>

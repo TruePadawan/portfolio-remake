@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 
-
-.head-anim {
-    padding: 0.5em;
-    display:flex;
-    animation-name: anim_scale;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
+.head-button {
+    border: none;
+    background: transparent;
+    width: 156px;
 }
 
-.head-no-anim {
+.head {
     padding: 0.5em;
     display:flex;
 }
@@ -38,27 +34,4 @@
 .title-role {
     font-size: 1.5em;
     padding: 5px;
-}
-
-.threads {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.threads span {
-    background: rgb(189, 177, 173);
-    border-radius: 12px;
-    width: 2.5px;
-    height: 20px;
-}
-
-@keyframes anim_scale {
-    25% {
-        transform: scale(1.05);
-    }
-
-    35% {
-        transform: scale(1.0); 
-    }
 }

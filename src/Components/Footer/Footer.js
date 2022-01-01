@@ -3,26 +3,14 @@ import Card from '../Card/Card';
 
 import styles from './Footer.module.css';
 
-export default function Footer()
+export default function Footer(props)
 {
     return (
-        <Card className={styles["footer"]}>
-            <Card className={`${styles["link"]} ${styles["link-title"]}`}>
-                <span>Icons by Icons8</span>
+        <button className={styles["footer-button"]}>
+            <Card onClicked={props.clickHandler} className={styles["footer"]}>
+                <span>View Icon Links</span>
             </Card>
-            <Card className={styles["link"]}>
-                <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
-            </Card>
-            <Card className={styles["link"]}>
-                <a href="https://icons8.com/icon/13963/twitter">Twitter icon</a>
-            </Card>
-            <Card className={styles["link"]}>
-                <a href="https://icons8.com/icon/Sf2NuZRCVuaE/dev">Dev icon</a>
-            </Card>
-            <Card className={styles["link"]}>
-                <a href="https://icons8.com/icon/13930/linkedin">LinkedIn icon</a>
-            </Card>
-        </Card>
+        </button>
     );
 }
 

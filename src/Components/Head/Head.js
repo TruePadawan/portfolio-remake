@@ -4,29 +4,16 @@ import styles from './Head.module.css';
 export default function Head(props)
 {
     return (
-      <Card
-        className={`${
-          props.clicked === false ? styles["head-anim"] : styles["head-no-anim"]
-        }`}
-      >
-        <div className={styles["threads"]}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <button className={styles["head-button"]}>
+            <Card className={styles["head"]} >
 
-        <Card className={styles["title"]} onClicked={props.clickHandler}>
-          <span className={styles["title-name"]}>Hermes</span>
-          <span className={styles["title-role"]}>Junior Dev</span>
-        </Card>
+                <Card className={styles["title"]} onClicked={props.clickHandler}>
+                    <span className={styles["title-name"]}>Hermes</span>
+                    <span className={styles["title-role"]}>Junior Dev</span>
+                    <span>Click to View More</span>
+                </Card>
 
-        <div className={styles["threads"]}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </Card>
+            </Card>
+        </button>
     );
 }
