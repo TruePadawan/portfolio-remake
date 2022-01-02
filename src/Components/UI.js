@@ -8,41 +8,41 @@ import Modal from './Modal/Modal';
 import styles from './ui.module.css';
 
 const AboutMe = {
-    title: "About Me",
-    message: <p>I'm Hermes, an entry-level developer. I work with C++ and Qt to build GUI applications, I also work with web technologies
-    to build simple websites. I'm working towards mobile development with React-Native but at the moment working on my web-dev skills.</p>
+    title: (<p>About Me</p>),
+    message: <p>I'm Hermes. I work with C++ and Qt to build GUI applications along with Web Technologies
+    to build websites. I have interests in Mobile Development with React-Native but at the moment working on my knowledge of Web Technologies.</p>
 }
 
 const IconLinks = {
-    title: "Icon Links by Icons8",
+    title: (<p>Icon Links by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></p>),
     links: (
         <Card className={styles["footer-links"]}>
             <Card className={styles["footer-link"]}>
-                <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
             </Card>
 
             <Card className={styles["footer-link"]}>
-                <a href="https://icons8.com/icon/13963/twitter">Twitter icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/13963/twitter">Twitter icon</a>
             </Card>
 
             <Card className={styles["footer-link"]}>
-                <a href="https://icons8.com/icon/Sf2NuZRCVuaE/dev">Dev icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/WE2Gl1C67IcL/mail">Mail icon</a> 
             </Card>
 
             <Card className={styles["footer-link"]}>
-                <a href="https://icons8.com/icon/13930/linkedin">LinkedIn icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/13930/linkedin">LinkedIn icon</a>
             </Card>
 
             <Card className={styles["footer-link"]}>
-                <a href="https://icons8.com/icon/6VwxladcAlxL/notepad">Notepad icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/6VwxladcAlxL/notepad">Notepad icon</a>
             </Card>
 
             <Card className={styles["footer-link"]}>
-                <a href="https://icons8.com/icon/42835/news">News icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/42835/news">News icon</a>
             </Card>
             
             <Card className={`${styles["footer-link"]} ${styles["last-footer-link"]}`}>
-                <a href="https://icons8.com/icon/65023/mushroom">Mushroom icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/65023/mushroom">Mushroom icon</a>
             </Card>
         </Card>
     )

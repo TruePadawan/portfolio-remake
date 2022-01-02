@@ -19,10 +19,10 @@
     border-radius: 10px;
 }
 
-.modal-header {
+.modal-header p{
     font-weight: bold;
     font-size: 1.5em;
-    color: rgb(201, 125, 125);;
+    color: rgb(201, 125, 125);
 }
 
 .modal-message {

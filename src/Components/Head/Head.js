@@ -9,7 +9,7 @@ export default function Head(props)
 
                 <Card className={styles["title"]} onClicked={props.clickHandler}>
                     <span className={styles["title-name"]}>Hermes</span>
-                    <span className={styles["title-role"]}>Junior Dev</span>
+                    <span className={styles["title-role"]}>Developer</span>
                     <span>Click to View More</span>
                 </Card>
 

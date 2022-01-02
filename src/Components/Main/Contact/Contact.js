@@ -22,9 +22,9 @@ export default function Contact()
                     </Card>
                 </a>
 
-                <a href="https://dev.to/TruePadawan" target="_blank" rel="noreferrer">
+                <a href="mailto:hermeschigoziri@gmail.com" target="_blank" rel="noreferrer">
                     <Card className={styles["contacts-link-card"]}>
-                       <img src={require("./resources/dev.png")} alt="DevTo PNG" />
+                       <img src={require("./resources/mail.png")} alt="Mail PNG" />
                     </Card>
                 </a>
 
