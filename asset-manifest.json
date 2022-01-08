@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio-remake/static/css/main.4a4b0630.css",
-    "main.js": "/portfolio-remake/static/js/main.74bc03d1.js",
+    "main.css": "/portfolio-remake/static/css/main.89aca81e.css",
+    "main.js": "/portfolio-remake/static/js/main.a9c9b2d3.js",
     "index.html": "/portfolio-remake/index.html",
-    "main.4a4b0630.css.map": "/portfolio-remake/static/css/main.4a4b0630.css.map",
-    "main.74bc03d1.js.map": "/portfolio-remake/static/js/main.74bc03d1.js.map"
+    "main.89aca81e.css.map": "/portfolio-remake/static/css/main.89aca81e.css.map",
+    "main.a9c9b2d3.js.map": "/portfolio-remake/static/js/main.a9c9b2d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4b0630.css",
-    "static/js/main.74bc03d1.js"
+    "static/css/main.89aca81e.css",
+    "static/js/main.a9c9b2d3.js"
   ]
 }
