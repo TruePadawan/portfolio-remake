@@ -19,9 +19,12 @@ const ModalContent = (props) => {
 
                 <div className={styles["modal-message"]}>
                     {props.message}
-                    {props.passChild}
                 </div>
-                
+                {props.passChild && (
+                    <div className={styles["modal-extra-content"]}>
+                        {props.passChild}
+                    </div>
+                )}
         </div>
     );
 };

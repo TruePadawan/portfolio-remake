@@ -90,7 +90,7 @@ export default function Projects()
                         <strong>Stack: </strong>
                         {projectInfo.nipsie.stack}
                     </p>
-                    <a href="https://github.com/TruePadawan/Nipsie" target="_blank" rel="noreferrer">View in GitHub</a>
+                    <a href="https://github.com/TruePadawan/Nipsie" target="_blank" rel="noreferrer">View on GitHub</a>
             </Modal>
         )}
 
@@ -105,7 +105,7 @@ export default function Projects()
                     <strong>Stack: </strong>
                     {projectInfo.notepad.stack}
                 </p>
-                <a href="https://github.com/TruePadawan/Notepad--" target="_blank" rel="noreferrer">View in GitHub</a>
+                <a href="https://github.com/TruePadawan/Notepad--" target="_blank" rel="noreferrer">View on GitHub</a>
             </Modal>
         )}
         <Card className={styles["projects-card"]}>
