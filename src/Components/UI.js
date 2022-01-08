@@ -9,8 +9,8 @@ import styles from './ui.module.css';
 
 const AboutMe = {
     title: (<p>About Me</p>),
-    message: <p>I'm Hermes. I work with C++ and Qt to build GUI applications along with Web Technologies
-    to build websites. I have interests in Mobile Development with React-Native but at the moment working on my knowledge of Web Technologies.</p>
+    message: <p>I'm Hermes. I have experience building GUI applications with C++/Qt along with Web Technologies
+    to build websites. My interests lies in Mobile Development with React-Native but at the moment I'm working on my knowledge of Web Technologies.</p>
 }
 
 const IconLinks = {
@@ -18,7 +18,7 @@ const IconLinks = {
     links: (
         <Card className={styles["footer-links"]}>
             <Card className={styles["footer-link"]}>
-                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon</a>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/16318/github">GitHub icon</a>
             </Card>
 
             <Card className={styles["footer-link"]}>
@@ -26,7 +26,7 @@ const IconLinks = {
             </Card>
 
             <Card className={styles["footer-link"]}>
-                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/WE2Gl1C67IcL/mail">Mail icon</a> 
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/OumT4lIcOllS/mail">Mail icon</a>
             </Card>
 
             <Card className={styles["footer-link"]}>
@@ -41,8 +41,12 @@ const IconLinks = {
                 <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/42835/news">News icon</a>
             </Card>
             
-            <Card className={`${styles["footer-link"]} ${styles["last-footer-link"]}`}>
+            <Card className={styles["footer-link"]}>
                 <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/65023/mushroom">Mushroom icon</a>
+            </Card>
+
+            <Card className={styles["footer-link"]}>
+                <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/LoyAjcvVKv1K/portfolio">Portfolio icon</a>
             </Card>
         </Card>
     )
