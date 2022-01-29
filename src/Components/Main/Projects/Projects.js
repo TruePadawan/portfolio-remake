@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import ReactToolTip from 'react-tooltip';
 import Card from '../../Card/Card';
 import Modal from '../../Modal/Modal';
 import styles from './Projects.module.css';
@@ -30,11 +31,16 @@ const projectItemsModalStateReducer = (currentState, action) => {
 
 const ProjectItem = (props) => {
     return (
-        <a href="#" onClick={props.clickHandler}>
+      <>
+        <a href="#" onClick={props.clickHandler} data-tip data-for={props.projectIconAlt}>
             <Card className={styles["projects-link-card"]}>
                 <img src={props.projectIcon} alt={props.projectIconAlt} />
             </Card>
         </a>
+        <ReactToolTip id={props.projectIconAlt} type="light">
+          <span>{props.tooltip}</span>
+        </ReactToolTip>
+      </>
     );
 }
 
@@ -121,6 +127,7 @@ export default function Projects()
               projectLink="https://truepadawan.github.io/portfolio-remake/"
               projectIcon="https://img.icons8.com/fluency/48/000000/portfolio.png"
               projectIconAlt="Portfolio"
+              tooltip="My Portfolio"
             />
 
             <ProjectItem
@@ -130,7 +137,8 @@ export default function Projects()
               }}
               projectLink="https://github.com/TruePadawan/The-News-Project"
               projectIcon="https://img.icons8.com/dusk/64/000000/news.png"
-              projectIconAlt="The News Project"
+              projectIconAlt="The News"
+              tooltip="The News - Website which displays News Data gotten from an API"
             />
 
             <ProjectItem
@@ -141,6 +149,7 @@ export default function Projects()
               projectLink="https://github.com/TruePadawan/Nipsie"
               projectIcon="https://img.icons8.com/cotton/64/000000/mushroom.png"
               projectIconAlt="Nipsie"
+              tooltip="Nipsie - Music Player"
             />
 
             <ProjectItem
@@ -151,6 +160,7 @@ export default function Projects()
               projectLink="https://github.com/TruePadawan/Notepad--"
               projectIcon="https://img.icons8.com/fluency/50/000000/notepad.png"
               projectIconAlt="Notepad--"
+              tooltip="Notepad-- - Simple Text Editor"
             />
           </div>
         </Card>
