@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import Card from '../../Card/Card';
 import styles from './Contact.module.css';
