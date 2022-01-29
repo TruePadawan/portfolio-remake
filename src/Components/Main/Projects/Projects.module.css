@@ -9,9 +9,9 @@
 
 .projects-card span
 {
-    color: rgb(247, 233, 159);
+    color: rgb(231, 191, 88);
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     align-self: center;
 }
 
@@ -50,4 +50,10 @@
 
 .projects-link-card:active {
     background-color: rgb(82, 79, 79);
+}
+
+@media screen and (max-width:310px) {
+    .projects-card span {
+        font-size: 1rem;
+    }
 }
