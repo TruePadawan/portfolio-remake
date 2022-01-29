@@ -17,7 +17,7 @@ const ModalContent = (props) => {
                     {props.title}
                 </div>
 
-                <div className={styles["modal-message"]}>
+                <div className={styles["modal-message"]} onClick={props.exitModal}>
                     {props.message}
                 </div>
                 {props.passChild && (
@@ -36,7 +36,7 @@ const Modal = (props) => {
                 ReactDOM.createPortal(<Backdrop exitModal={props.exitModal} />, document.getElementById('modal-backdrop'))
             }
             {
-                ReactDOM.createPortal(<ModalContent title={props.title} message={props.message} passChild={props.children} />, document.getElementById('modal-content'))
+                ReactDOM.createPortal(<ModalContent title={props.title} message={props.message} passChild={props.children} exitModal={props.exitModal}/>, document.getElementById('modal-content'))
             }
         </React.Fragment>
     )
