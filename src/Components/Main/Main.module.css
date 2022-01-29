@@ -21,6 +21,11 @@
     height: 56px;
 }
 
+.tech-stack span {
+    color: rgb(49, 45, 45);
+    font-weight: bold;
+}
+
 .contact-and-project {
     height: 100%;
     display: flex;
