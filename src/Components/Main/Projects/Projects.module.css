@@ -4,6 +4,7 @@
     flex-direction: column;
     padding: 0.5em;
     gap: 0.5em;
+    background-color: rgb(70, 70, 70);
     box-shadow: 0 1px 8px rgba(114, 111, 111, 0.25);
 }
 
@@ -11,7 +12,7 @@
 {
     color: rgb(231, 191, 88);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     align-self: center;
 }
 
@@ -21,6 +22,10 @@
     justify-content:stretch;
     flex-wrap: wrap;
     gap: 1em;
+}
+
+.projects span {
+    color: rgb(49, 45, 45); 
 }
 
 .projects a {

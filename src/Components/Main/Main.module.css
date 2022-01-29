@@ -27,4 +27,5 @@
 .contact-and-project {
     height: 100%;
     display: flex;
+    gap: 5px;
 }
