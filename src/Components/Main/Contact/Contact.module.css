@@ -23,6 +23,10 @@
     gap: 1em;
 }
 
+.contacts span {
+    color: rgb(49, 45, 45); 
+}
+
 .contacts a {
     flex-grow: 1;
     display: flex;
