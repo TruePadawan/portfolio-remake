@@ -1,7 +1,7 @@
 const ProjectItemInfo = {
     portfolio : {
         name: (<p>Portfolio</p>),
-        desc: (<p>You're looking at it. A simple portfolio built with ReactJs.</p>),
+        desc: (<p>You're looking at it. A simple portfolio built with ReactJs + React-Tooltip.</p>),
         stack: "HTML, CSS, ReactJs"
     },
     news: {
