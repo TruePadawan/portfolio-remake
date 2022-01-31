@@ -32,12 +32,12 @@ const projectItemsModalStateReducer = (currentState, action) => {
 const ProjectItem = (props) => {
     return (
       <>
-        <a href="#" onClick={props.clickHandler} data-tip data-for={props.projectIconAlt} data-event="hover">
+        <a href="#" onClick={props.clickHandler} data-tip data-for={props.projectIconAlt}>
             <Card className={styles["projects-link-card"]}>
                 <img src={props.projectIcon} alt={props.projectIconAlt} />
             </Card>
         </a>
-        <ReactToolTip id={props.projectIconAlt} type="light">
+        <ReactToolTip id={props.projectIconAlt} type="light" globalEventOff="click">
           <span>{props.tooltip}</span>
         </ReactToolTip>
       </>

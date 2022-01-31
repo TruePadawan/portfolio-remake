@@ -5,12 +5,12 @@ import styles from './Contact.module.css';
 const ContactItem = (props) => {
     return (
         <>
-            <a href={props.link} target="_blank" rel="noreferrer" data-tip data-for={props.iconAlt} data-event="hover">
+            <a href={props.link} target="_blank" rel="noreferrer" data-tip data-for={props.iconAlt}>
                 <Card className={styles["contacts-link-card"]}>
                     <img src={props.iconLink} alt={props.iconAlt} />
                 </Card>
             </a>
-            <ReactTooltip id={props.iconAlt} type="light">
+            <ReactTooltip id={props.iconAlt} type="light" globalEventOff="click">
                 <span>{props.tooltip}</span>
             </ReactTooltip>
         </>

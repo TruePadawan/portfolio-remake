@@ -37,6 +37,7 @@
 }
 
 .modal-extra-content a {
+    margin-top: 10px;
     align-self: center;
     border-radius: 5px;
     background-color: cornsilk;
