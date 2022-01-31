@@ -11,7 +11,7 @@ const AboutMe = {
     title: (<p>About Me👋</p>),
     message: <p>I'm Hermes. I have experience building GUI applications with C++/Qt along with Web Technologies
     to build websites and I'm flexible enough to pick up and use a new technology efficiently.<br />
-    I'm currently working on improving my skill in using Web Technologies before diving into Mobile App Development.<br />
+    I'm currently working on improving my skill in Web Technologies before diving into Mobile App Development.<br />
     I usually spend most of my time doing tech-related activities, reading fantasy books or gaming.</p>
 }
 
