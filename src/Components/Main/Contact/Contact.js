@@ -5,7 +5,7 @@ import styles from './Contact.module.css';
 const ContactItem = (props) => {
     return (
         <>
-            <a href={props.link} target="_blank" rel="noreferrer" data-tip data-for={props.iconAlt}>
+            <a href={props.link} target="_blank" rel="noreferrer" data-tip data-for={props.iconAlt} data-event="hover">
                 <Card className={styles["contacts-link-card"]}>
                     <img src={props.iconLink} alt={props.iconAlt} />
                 </Card>
